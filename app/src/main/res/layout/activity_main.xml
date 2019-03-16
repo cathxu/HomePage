@@ -6,24 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/water"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:text="Water"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onWaterButtonClick" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Consumption"
+            android:textSize="26sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onWaterButtonClick"
+                android:text="Water"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onFoodButtonClick"
+                android:text="Food"/>
+
+            <Button
+                android:id="@+id/fuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fossil Fuel"
+                android:onClick="onFuelButtonClick"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

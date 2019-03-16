@@ -17,4 +17,14 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, WaterActivity.class);
         startActivity(i);
     }
+
+    public void onFoodButtonClick(View v) {
+        Intent i = new Intent(this, FoodActivity.class);
+        startActivity(i);
+    }
+
+    public void onFuelButtonClick(View v) {
+        Intent i = new Intent(this, FossilFuelActivity.class);
+        startActivity(i);
+    }
 }

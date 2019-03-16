@@ -3,21 +3,20 @@ package com.example.mainactivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 
-public class FoodActivity extends AppCompatActivity {
+public class FossilFuelActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food);
+        setContentView(R.layout.activity_fossil_fuel);
     }
 
-    public void onFoodCancelClick(View view) {
+    public void onCancelButtonClick(View v) {
         finish();
     }
 
-    public void onFoodSaveClick(View view) {
+    public void onSaveButtonClick(View v) {
         //store info in database
         finish();
     }
